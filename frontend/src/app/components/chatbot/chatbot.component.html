@@ -1,0 +1,20 @@
+<div class="chatbot-container" [style.width.px]="width" [style.height.px]="height">
+  <div class="chatbot-header">
+    <h2>Chatbot</h2>
+    <div class="window-controls">
+      <button class="minimize-btn" (click)="toggleMinimize()">
+        <span>{{ isMinimized ? '□' : '−' }}</span>
+      </button>
+    </div>
+  </div>
+  <div class="chatbot-messages" [class.minimized]="isMinimized" #messageContainer>
+    <div *ngFor="let message of messages" class="message" [ngClass]="{'user-message': message.isUser, 'bot-message': !message.isUser}">
+      <p>{{message.text}}</p>
+    </div>
+  </div>
+  <div class="chatbot-input" [class.minimized]="isMinimized">
+    <input type="text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" (input)="resetInactivityTimer()" placeholder="Type your message...">
+    <button (click)="sendMessage()">Send</button>
+  </div>
+  <div class="resize-handle" (mousedown)="startResize($event)"></div>
+</div>

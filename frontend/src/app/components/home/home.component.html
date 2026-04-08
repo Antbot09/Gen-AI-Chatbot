@@ -1,0 +1,41 @@
+<div class="home-container">
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>Welcome to Your Internet Service Provider</h1>
+      <p>Your one-stop solution for all internet needs. Fast, reliable, and always on.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="content-section">
+      <h2>About Us</h2>
+      <p>We are committed to providing the best internet service experience. Our state-of-the-art infrastructure ensures you get the speed and reliability you deserve.</p>
+    </section>
+
+    <section id="services" class="content-section">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Fiber Internet</h3>
+          <p>Experience lightning-fast speeds with our fiber optic network.</p>
+        </div>
+        <div class="card">
+          <h3>24/7 Support</h3>
+          <p>Our support team is always here to help you, any time of the day.</p>
+        </div>
+        <div class="card">
+          <h3>No Hidden Fees</h3>
+          <p>Transparent pricing with no surprise charges on your bill.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="help" class="content-section help-section">
+      <h2>Help and Assistance</h2>
+      <p>Have a question or need help with your service? Our chatbot is here to assist you.</p>
+      <button (click)="openChatbot()">Chat with Us</button>
+    </section>
+  </main>
+
+  <app-chatbot *ngIf="chatbotOpen"></app-chatbot>
+</div>

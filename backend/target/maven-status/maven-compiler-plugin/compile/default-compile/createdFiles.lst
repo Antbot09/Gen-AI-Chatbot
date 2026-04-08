@@ -1,0 +1,13 @@
+com\internetserviceprovider\chatbot\service\ChatbotService.class
+com\internetserviceprovider\chatbot\controller\ChatbotController.class
+com\internetserviceprovider\chatbot\dto\GeminiRequest.class
+com\internetserviceprovider\chatbot\dto\GeminiResponse$Part.class
+com\internetserviceprovider\chatbot\model\ChatResponse.class
+com\internetserviceprovider\chatbot\dto\GeminiRequest$Content.class
+com\internetserviceprovider\chatbot\dto\GeminiResponse$Candidate.class
+com\internetserviceprovider\chatbot\dto\GeminiRequest$Part.class
+com\internetserviceprovider\chatbot\model\ChatRequest.class
+com\internetserviceprovider\chatbot\config\AppConfig.class
+com\internetserviceprovider\chatbot\dto\GeminiResponse$Candidate$Content.class
+com\internetserviceprovider\chatbot\ChatbotApplication.class
+com\internetserviceprovider\chatbot\dto\GeminiResponse.class
